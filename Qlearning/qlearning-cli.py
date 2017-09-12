@@ -6,13 +6,13 @@ import time
 
 np.random.seed(2)
 
-N_STATES    = 6                 # length of 1d world
-ACTIONS     = ['left', 'right'] # avaliable action
-EPSILON     = 0.9               # greedy policy
-ALPHA       = 0.1               # learning rate
-LAMBDA      = 0.9               # discount factor
-MAX_EPISODES= 13
-FRESH_TIME  = 0.01              # fresh time for one move
+N_STATES     = 6                 # length of 1d world
+ACTIONS      = ['left', 'right'] # avaliable action
+EPSILON      = 0.9               # greedy policy
+ALPHA        = 0.1               # learning rate
+LAMBDA       = 0.9               # discount factor
+MAX_EPISODES = 13
+FRESH_TIME   = 0.01              # fresh time for one move
 
 
 def build_q_table(n_states, actions):
@@ -25,7 +25,7 @@ def build_q_table(n_states, actions):
 
 def choose_action(state, q_table):
     '''how to choose action'''
-    state_action = q_table.iloc[state, :]
+    state_action = q_table.iloc[state, :] # choose state action value
     if (np.random.uniform() > EPSILON) or (state_action.all() == 0):
         action_name = np.random.choice(ACTIONS)
     else:
@@ -48,7 +48,7 @@ def get_env_feedback(S, A):
             S_ = S
         else:
             S_ = S - 1
-    return S_, R
+    return S_, R # reward & state
 
 def update_env(S, episode, step_counter):
     # This is how environment be updated
