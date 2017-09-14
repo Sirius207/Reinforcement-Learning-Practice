@@ -10,3 +10,10 @@ Resources:
 ### Practices
 - Cli
 - Maze
+
+
+## Sarsa & Sarsa(Lambda)
+
+### Practice
+- Maze
+- Maze (Sarsa Lambda version)
