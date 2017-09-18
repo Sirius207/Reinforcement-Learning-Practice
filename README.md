@@ -17,3 +17,7 @@ Resources:
 ### Practice
 - Maze
 - Maze (Sarsa Lambda version)
+
+### DQN
+- Maze
+- CartPole-v0 (Open GYM)
