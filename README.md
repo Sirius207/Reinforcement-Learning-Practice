@@ -22,3 +22,6 @@ Resources:
 - Maze
 - CartPole-v0 (Open GYM)
 - MountainCar (Open GYM)
+
+### DDQN
+- CartPole
