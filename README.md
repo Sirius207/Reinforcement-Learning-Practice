@@ -31,3 +31,5 @@ Resources:
 
 ## D(Dueling)DQN
 - CartPole-v0 (Open GYM)
+
+## Policy Gradient
