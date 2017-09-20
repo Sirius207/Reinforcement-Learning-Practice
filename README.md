@@ -25,3 +25,9 @@ Resources:
 
 ### DDQN
 - CartPole
+
+### Prioritized Replay
+- MountainCar (Open GYM)
+
+## D(Dueling)DQN
+- CartPole-v0 (Open GYM)
